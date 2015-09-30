@@ -2,7 +2,7 @@ class Nomad < FPM::Cookery::Recipe
   name 'nomad'
 
   version '0.1.0'
-  revision '2'
+  revision '3'
   description 'A Distributed, Highly Available, Datacenter-Aware Scheduler'
 
   homepage 'https://www.nomadproject.io/'

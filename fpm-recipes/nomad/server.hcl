@@ -2,7 +2,7 @@
 log_level = "DEBUG"
 
 # Setup data dir
-data_dir = "/mnt/nomad"
+data_dir = "/var/lib/nomad"
 
 # Enable the server
 server {

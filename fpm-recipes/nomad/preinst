@@ -1,7 +1,7 @@
 #!/bin/sh -e
 
-mkdir -p /mnt/nomad
-chmod 750 /mnt/nomad
+mkdir -p /var/lib/nomad
+chmod 750 /var/lib/nomad
 mkdir -p /etc/nomad.d
 chmod 750 /etc/nomad.d
 mkdir -p /var/log/nomad
