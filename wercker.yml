@@ -10,6 +10,7 @@ build:
     - script:
         name: get the source and build
         code: |
+          locale-gen en_US.UTF-8
           git clone https://github.com/darron/nomad-build.git
           cd fpm-recipes/nomad
           sudo fpm-cook install-deps
@@ -29,3 +30,4 @@ deploy:
   after-steps:
       - wantedly/pretty-slack-notify:
           webhook_url: $SLACK_WEBHOOK_URL
+          channel: general
