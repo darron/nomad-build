@@ -1,0 +1,9 @@
+"/var/log/nomad/nomad.log" {
+  weekly
+  rotate 7
+  create 644 root root
+  missingok
+  compress
+  notifempty
+  copytruncate
+}

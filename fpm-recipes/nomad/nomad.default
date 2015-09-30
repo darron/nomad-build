@@ -1,0 +1,4 @@
+# Options for Nomad
+# See https://www.nomadproject.io/ for more details
+OPTIONS=""
+LOGFILE="/var/log/nomad/nomad.log"

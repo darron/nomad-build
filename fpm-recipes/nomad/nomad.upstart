@@ -1,0 +1,18 @@
+description "Nomad - A Distributed, Highly Available, Datacenter-Aware Scheduler"
+
+emits nomad-up
+
+start on runlevel [2345]
+stop on runlevel [!2345]
+
+script
+  if [ -f /etc/default/nomad ]; then
+    . /etc/default/nomad
+  fi
+  CMD="/usr/local/bin/nomad agent -config /etc/nomad.d $OPTIONS"
+  exec $CMD >> "$LOGFILE"
+end script
+
+post-start exec initctl emit nomad-up
+
+kill signal INT
