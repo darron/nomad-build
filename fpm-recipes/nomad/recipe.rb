@@ -7,7 +7,7 @@ class Nomad < FPM::Cookery::Recipe
 
   homepage 'https://www.nomadproject.io/'
   source "https://dl.bintray.com/mitchellh/#{name}/#{name}_#{version}_linux_amd64.zip"
-  sha256 '6d48846e40a44449f2b84eb37f32859eff98468ebffef3b4475d7a060f14fa32'
+  sha256 '0c41b5b804089e3f776998fb6e03815e9862580ca953dd39ee822d71fde51e70'
 
   maintainer 'Darron Froese <darron@froese.org>'
   vendor 'octohost'
