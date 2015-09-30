@@ -2,7 +2,7 @@ class Nomad < FPM::Cookery::Recipe
   name 'nomad'
 
   version '0.1.0'
-  revision '1'
+  revision '2'
   description 'A Distributed, Highly Available, Datacenter-Aware Scheduler'
 
   homepage 'https://www.nomadproject.io/'
@@ -20,6 +20,7 @@ class Nomad < FPM::Cookery::Recipe
   build_depends 'unzip'
 
   pre_install 'preinst'
+  post_install 'postinst'
 
   def build
     safesystem "mkdir -p #{builddir}/usr/local/bin/"

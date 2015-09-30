@@ -1,0 +1,5 @@
+#!/bin/sh -e
+
+chmod a+x /usr/local/bin/nomad
+
+exit 0
