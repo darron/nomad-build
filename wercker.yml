@@ -1,4 +1,4 @@
-box: darron/ubuntu14.04@1.0.2
+box: phusion/passenger-ruby22
 no-response-timeout: 10
 build:
   steps:
