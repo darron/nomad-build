@@ -1,13 +1,13 @@
 class Nomad < FPM::Cookery::Recipe
   name 'nomad'
 
-  version '0.1.0'
-  revision '3'
+  version '0.2.0'
+  revision '1'
   description 'A Distributed, Highly Available, Datacenter-Aware Scheduler'
 
   homepage 'https://www.nomadproject.io/'
-  source "https://dl.bintray.com/mitchellh/#{name}/#{name}_#{version}_linux_amd64.zip"
-  sha256 '0c41b5b804089e3f776998fb6e03815e9862580ca953dd39ee822d71fde51e70'
+  source "https://releases.hashicorp.com/#{name}/#{version}/#{name}_#{version}_linux_amd64.zip"
+  sha256 'f4525cbd99fd57ef607f9556be4f4bc39f82391947f40cc993538bba7da5bf90'
 
   maintainer 'Darron Froese <darron@froese.org>'
   vendor 'octohost'
